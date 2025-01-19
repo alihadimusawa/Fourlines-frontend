@@ -1,0 +1,155 @@
+#price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 5vh;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.categoryDropdowns{
+    position: absolute;
+    top: 20vh;
+    border-radius: 20px;
+    width: 8.8vw;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    overflow: hidden;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    border: 1px solid #252B69;
+}
+
+#last{
+    border-bottom: 0px;
+}
+
+.categoryDropdowns *{
+    border: 1px solid #252B69;
+    width: 100%;
+    background-color: white;
+    height: 3.8vh;
+    padding-top: 1vh;
+    transition: background-color 0.2s ease, color 0.3s ease; /* Add a transition for smooth effect */
+    font-size: 1vw;
+}
+
+#category{
+    width: 100%;
+    height: 100%;
+    font-size: 1vw;
+    background-color: #252B69;
+    border-radius: 10px;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#category img{
+    width: 0.89vw;
+    height: auto;
+    border-radius: 0;
+    border: 0;
+    transition: transform 0.3s ease; /* Add smooth animation */
+}
+
+.categoryContainer:hover .categoryDropdowns{
+    visibility: visible;
+}
+
+.categoryContainer:hover #category{
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+.categoryContainer:hover #category img {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; /* Add smooth animation */
+}
+
+.categoryDropdowns *:hover{
+    background-color: #252B69;
+    color: white;
+}
+
+
+#last{
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+
+
+
+/* Search Bar */
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #252B69;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #252B69;
+}
+
+.searchBar input{
+    width: 95%;
+    height: 100%;
+    padding-left: 2vw;
+    border: none;
+    border-right: 1px solid #252B69;
+    font-size: 1vw;
+}
+
+#searchBarRight{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#searchBarRight:hover{
+    background-color: #5c619b;
+}
+
+#searchBarRight img{
+    width: 1.5vw;
+    height: auto;
+    border: none;
+}
+
+/* to remove input focus border on click */
+textarea:focus, input:focus{
+    outline: none;
+}

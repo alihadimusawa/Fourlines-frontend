@@ -1,0 +1,45 @@
+.footer {
+    background-color: #252B69;
+    width: 100%;
+    margin-top: 10vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img{
+    width: 15vw;
+    height: auto;
+    border: none;
+    align-self: flex-start;
+}
+
+.footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2.5vh;
+    width: 80%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center !important;
+    color: white;
+    width: 15vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.info *{
+    margin: 0.7vh;
+}
+
+.footer p{
+    font-weight: 100;
+    color: #DADADA;
+}
